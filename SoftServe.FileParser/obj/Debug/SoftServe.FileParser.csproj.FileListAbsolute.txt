@@ -1,0 +1,9 @@
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\SoftServe.FileParser.exe
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\SoftServe.FileParser.pdb
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.csprojAssemblyReference.cache
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.csproj.CoreCompileInputs.cache
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.exe
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.pdb
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\Printers.dll
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\Printers.pdb
+C:\Users\NoApple\Desktop\GitHub\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.csproj.CopyComplete
