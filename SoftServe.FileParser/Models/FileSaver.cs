@@ -9,9 +9,12 @@ namespace SoftServe.FileParser
 {
     class FileSaver
     {
-        public static void SaveFile()
+        public static void SaveFile(string tempFilePath, string filePath)
         {
-            File.Replace("..\\..\\..\\tempTest.txt", "..\\..\\..\\test.txt", "..\\..\\..\\backupTest.txt");
+            string pathBackup = Path.GetFullPath(filePath);
+            pathBackup = pathBackup.Insert(pathBackup.Length - 4, "_backup");
+            //File.Replace("..\\..\\..\\tempTest.txt", "..\\..\\..\\test.txt", "..\\..\\..\\backup.txt");
+            File.Replace(tempFilePath, filePath, pathBackup);
         }
     }
 }

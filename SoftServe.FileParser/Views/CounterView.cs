@@ -11,7 +11,7 @@ namespace SoftServe.FileParser
         public static void ViewCount(int count, string inputArg)
         {
             Console.WriteLine($"Count of [{inputArg}] - {count}");
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

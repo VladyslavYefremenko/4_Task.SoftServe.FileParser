@@ -50,6 +50,7 @@
     <Compile Include="Controllers\ProgrammController.cs" />
     <Compile Include="Controllers\ReplacerController.cs" />
     <Compile Include="Interfaces\IFileSaver.cs" />
+    <Compile Include="Models\ArgsValidator.cs" />
     <Compile Include="Models\Counter.cs" />
     <Compile Include="Models\FileLenght.cs" />
     <Compile Include="Models\FileReader.cs" />

@@ -11,23 +11,56 @@ namespace SoftServe.FileParser
     {
         public static void Replace(string filePath, string stringForReplace, string replacingString)
         {
-            int fileLenght = FileLenght.getLenght(filePath);
+            const int MAX_SIZE = 1000;
 
-            string tempFilePath = "..\\..\\..\\tempTest.txt";
+            List<string> outputLines = new List<string>();
+            List<string> inputLines = new List<string>();
 
-            for (int i = 0; i < fileLenght; i++)
+            string tempFilePath = $"..\\..\\..\\temp{Path.GetFileName(filePath)}";
+            int counter = 0;
+            int numOfLinesToSkip = 0;
+            int fileLines = 0;
+            int countOfReplace = 0;
+
+            do
             {
-                string line = FileReader.ReadFile(filePath, i);
+                inputLines = FileReader.ReadFile(filePath, numOfLinesToSkip, MAX_SIZE);
 
-                line = Replacer.Replace(line, stringForReplace, replacingString);
+                foreach (var line in inputLines)
+                {
+                    string resultLine = string.Empty;
 
-                File.AppendAllText(tempFilePath, line + "\n");
-            }
+                    if (line.Contains(stringForReplace))
+                    {
+                        resultLine = line.Replace(stringForReplace, replacingString);
+                        countOfReplace++;
+                    }
+                    else
+                    {
+                        resultLine = line;
+                    }
 
-            FileSaver.SaveFile();
+                    outputLines.Add(resultLine);
+                }
+
+                File.AppendAllLines(tempFilePath, outputLines);
+
+                fileLines += inputLines.Count;
+                counter += MAX_SIZE;
+                numOfLinesToSkip += MAX_SIZE;
+
+                outputLines.Clear();
+                inputLines.Clear();
+
+            } while (counter <= fileLines);
+            
+
+            FileSaver.SaveFile(tempFilePath, filePath);
 
             Console.WriteLine("File saved!"); // ToDo: add DLL printer
-            Console.ReadKey();
+
+
+            //Console.WriteLine($"Num of replace - {countOfReplace}");
 
         }
     }

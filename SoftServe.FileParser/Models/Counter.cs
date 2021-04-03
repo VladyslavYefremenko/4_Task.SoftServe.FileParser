@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,23 +11,38 @@ namespace SoftServe.FileParser
     {
         public static int CountNumOf(string filePath, string inputArg)
         {
-            int fileLenght = FileLenght.getLenght(filePath);
+            const int MAX_SIZE = 1000;
+
             int count = 0;
+            int numOfLinesToSkip = 0;
+            int fileLines = 1;
+            int counter = 0;
+            List<string> lines = new List<string>();
 
-            for (int i = 0; i < fileLenght; i++)
+            do
             {
-                string line = FileReader.ReadFile(filePath, i);
+                lines = FileReader.ReadFile(filePath, numOfLinesToSkip, MAX_SIZE);
 
-                var lineArr = line.Split(' ');
-
-                foreach (var lineInArr in lineArr)
+                foreach (var line in lines)
                 {
-                    if (inputArg == lineInArr)
+                    var lineArr = line.Split(' ');
+
+                    foreach (var lineInArr in lineArr)
                     {
-                        count++;
+                        if (lineInArr.Contains(inputArg))
+                        {
+                            count += 1;
+                        }
                     }
                 }
-            }
+                fileLines += lines.Count;
+
+                lines.Clear();
+
+                counter += MAX_SIZE;
+                numOfLinesToSkip += MAX_SIZE;
+
+            } while (counter < fileLines);
 
             return count;
         }
