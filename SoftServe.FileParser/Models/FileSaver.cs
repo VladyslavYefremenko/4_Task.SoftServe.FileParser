@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace SoftServe.FileParser
 {
-    class FileSaver
+    public class FileSaver : IFileSaver
     {
-        public static void SaveFile(string tempFilePath, string filePath)
+        public void SaveFile(string tempFilePath, string filePath)
         {
             string pathBackup = Path.GetFullPath(filePath);
             pathBackup = pathBackup.Insert(pathBackup.Length - 4, "_backup");
-            //File.Replace("..\\..\\..\\tempTest.txt", "..\\..\\..\\test.txt", "..\\..\\..\\backup.txt");
             File.Replace(tempFilePath, filePath, pathBackup);
         }
     }

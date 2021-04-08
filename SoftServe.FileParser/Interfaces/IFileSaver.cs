@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftServe.FileParser
+﻿namespace SoftServe.FileParser
 {
     interface IFileSaver
     {
-        void SaveFile(); //ToDo: ???
+        void SaveFile(string tempFilePath, string filePath);
     }
 }

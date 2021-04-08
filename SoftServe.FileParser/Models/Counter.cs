@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace SoftServe.FileParser
 {
-    class Counter
+    public class Counter
     {
         public static int CountNumOf(string filePath, string inputArg)
         {
-            const int MAX_SIZE = 1000;
+            int maxSize = DefaultSettings.MAX_SIZE_ARRAY;
 
             int count = 0;
             int numOfLinesToSkip = 0;
@@ -19,9 +14,10 @@ namespace SoftServe.FileParser
             int counter = 0;
             List<string> lines = new List<string>();
 
+            FileReader reader = new FileReader();
             do
             {
-                lines = FileReader.ReadFile(filePath, numOfLinesToSkip, MAX_SIZE);
+                lines = reader.ReadFile(filePath, numOfLinesToSkip, maxSize);
 
                 foreach (var line in lines)
                 {
@@ -39,8 +35,8 @@ namespace SoftServe.FileParser
 
                 lines.Clear();
 
-                counter += MAX_SIZE;
-                numOfLinesToSkip += MAX_SIZE;
+                counter += maxSize;
+                numOfLinesToSkip += maxSize;
 
             } while (counter < fileLines);
 

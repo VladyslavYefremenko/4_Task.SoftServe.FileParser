@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftServe.FileParser
+﻿namespace SoftServe.FileParser
 {
-    class Replacer
+    public class Replacer : IReplacer
     {
-        public static string Replace(string line, string stringForReplace, string replacingString)
+        public string Replace(string line, string stringForReplace, string replacingString)
         {
             string result = line;
 
