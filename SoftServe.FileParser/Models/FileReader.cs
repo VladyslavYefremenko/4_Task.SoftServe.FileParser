@@ -2,11 +2,11 @@
 using System.IO;
 using System.Linq;
 
-namespace SoftServe.FileParser
+namespace SoftServe.FileParser.Models
 {
     public class FileReader : IFileReader
     {
-        public List<string> ReadFile(string filePath, int numOfLine, int maxSize)
+        public List<string> ReadFile(string filePath, int numOfLine, int maxSize) // ToDo: переделать
         {
             List<string> lines = new List<string>();
 

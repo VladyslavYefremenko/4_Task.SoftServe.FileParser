@@ -5,3 +5,10 @@ C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParser\o
 C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.csproj.CoreCompileInputs.cache
 C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.dll
 C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.pdb
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\SoftServe.FileParser.dll.config
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\SoftServe.FileParser.dll
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\bin\Debug\SoftServe.FileParser.pdb
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.csprojAssemblyReference.cache
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.csproj.CoreCompileInputs.cache
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.dll
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParser\obj\Debug\SoftServe.FileParser.pdb

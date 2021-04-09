@@ -9,3 +9,14 @@ C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParserVi
 C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.csproj.CopyComplete
 C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.exe
 C:\Users\NoApple\Desktop\Temp\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.pdb
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\bin\Debug\SoftServe.FileParserView.exe.config
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\bin\Debug\SoftServe.FileParserView.exe
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\bin\Debug\SoftServe.FileParserView.pdb
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\bin\Debug\SoftServe.FileParser.dll
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\bin\Debug\SoftServe.FileParser.pdb
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\bin\Debug\SoftServe.FileParser.dll.config
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.csprojAssemblyReference.cache
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.csproj.CoreCompileInputs.cache
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.csproj.CopyComplete
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.exe
+C:\Users\NoApple\Desktop\SoftServe\4_Task.SoftServe.FileParser\SoftServe.FileParserView\obj\Debug\SoftServe.FileParserView.pdb

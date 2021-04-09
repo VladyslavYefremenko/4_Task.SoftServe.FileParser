@@ -47,14 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consts\DefaultSettings.cs" />
+    <Compile Include="Interfaces\IFileManager.cs" />
     <Compile Include="Interfaces\IFilePathValidator.cs" />
-    <Compile Include="Interfaces\IFileReader.cs" />
-    <Compile Include="Interfaces\IFileSaver.cs" />
     <Compile Include="Interfaces\IReplacer.cs" />
     <Compile Include="Models\Counter.cs" />
+    <Compile Include="Models\FileManager.cs" />
     <Compile Include="Models\FilePathValidator.cs" />
-    <Compile Include="Models\FileReader.cs" />
-    <Compile Include="Models\FileSaver.cs" />
     <Compile Include="Models\Replacer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

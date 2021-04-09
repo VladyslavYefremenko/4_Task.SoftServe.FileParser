@@ -6,40 +6,25 @@ namespace SoftServe.FileParser
     {
         public static int CountNumOf(string filePath, string inputArg)
         {
-            int maxSize = DefaultSettings.MAX_SIZE_ARRAY;
-
             int count = 0;
-            int numOfLinesToSkip = 0;
-            int fileLines = 1;
-            int counter = 0;
+
             List<string> lines = new List<string>();
 
-            FileReader reader = new FileReader();
-            do
+            FileManager fileManager = new FileManager();
+            
+            foreach (var line in fileManager.ReadFile(filePath))
             {
-                lines = reader.ReadFile(filePath, numOfLinesToSkip, maxSize);
+                var lineArr = line.Split(' ');
 
-                foreach (var line in lines)
+                foreach (var word in lineArr)
                 {
-                    var lineArr = line.Split(' ');
-
-                    foreach (var lineInArr in lineArr)
+                    if (word.Contains(inputArg))
                     {
-                        if (lineInArr.Contains(inputArg))
-                        {
-                            count += 1;
-                        }
+                        count += 1;
                     }
                 }
-                fileLines += lines.Count;
-
-                lines.Clear();
-
-                counter += maxSize;
-                numOfLinesToSkip += maxSize;
-
-            } while (counter < fileLines);
-
+            }
+            
             return count;
         }
     }
